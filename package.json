@@ -1,9 +1,12 @@
 {
   "scripts": {
-    "build": "tailwindcss build -i ./assets/css/main.css -o ./assets/css/style.css",
-    "dev": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch"
+    "build": "tailwindcss build -i ./assets/css/main.css -o ./assets/css/styles.css",
+    "dev": "tailwindcss -i ./assets/css/main.css -o ./assets/css/styles.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "flowbite": "^1.4.7"
   }
 }

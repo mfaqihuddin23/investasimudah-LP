@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+}
+
+/* typography  */
+h1{
+  font-size: 48px;
+  line-height: 150%;
+}
+h2{
+  font-size: 48px;
+  line-height: 120%;
+}
+h3{
+  font-size: 42px;
+  line-height: 120%;
+}
+h4{
+  font-size: 36px;
+  line-height: 150%;
+}
+h5{
+  font-size: 32px;
+  line-height: 120%;
+}
+h6{
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.caption-1{
+  font-size: 28px;
+  line-height: 150%;
+}
+.caption-2{
+  font-size: 24px;
+  line-height: 150%;
+}
+.caption-3{
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.body-1{
+  font-size: 20px;
+  line-height: 150%;
+}
+.body-2{
+  font-size: 16px;
+  line-height: 150%;
+}
+.body-3{
+  font-size: 14px;
+  line-height: 150%;
+}
+.body-4{
+  font-size: 12px;
+  line-height: 150%;
+}
