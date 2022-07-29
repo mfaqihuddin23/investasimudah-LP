@@ -15,7 +15,7 @@
       <a href="https://flowbite.com/" class="flex items-center">
           <img src="/assets/images/logo-IM.svg" class="" alt="">
       </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 " aria-controls="navbar-default" aria-expanded="false">
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 lg:hidden" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 12H21" stroke="#8B74EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -23,7 +23,7 @@
           <path d="M3 18H21" stroke="#8B74EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
         <ul class="flex flex-col mt-12 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
           <li class="flex items-center">
             <a href="#" class="block btn-nav font-poppins font-normal text-imcol-300">Login</a>
@@ -538,16 +538,29 @@
   </section>
   <section class="pricing py-40">
     <div class="container">
-      <div class="text-wrap text-center mb-12">
+      <div class="text-wrap text-center mb-12 flex flex-col items-center">
         <h1 class="font-poppins font-semibold text-imcol-100 mb-2">
           Check Our Pricing
         </h1>
         <p class="body-4 font-poppins font-normal text-imcol-100 opacity-70 mb-4">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
         </p>
+        <!-- toggle  -->
+        <div class="toggle-wrap flex justify-between items-center my-4">
+          <span class="font-poppins text-sm font-medium text-imcol-100 ">Monthly</span>
+          <label for="default-toggle" class="inline-flex relative items-center cursor-pointer mx-3">
+            <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
+            <div class="w-11 h-6 bg-[#E2E1FF]  rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full  after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-[#8B74EB] after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#E2E1FF]"></div>
+            <!-- <span class="ml-3 text-sm font-medium text-imcol-100 ">Yearly</span> -->
+          </label>
+          <span class="font-poppins text-sm font-medium text-imcol-100 ">Yearly</span>
+        </div>
+        <p class="body-1 font-semibold text-imcol-300">
+          Up to 60% Off
+        </p>
       </div>
       
-      <!-- toggle  -->
+      
 
       <div class="flex flex-col lg:flex-row justify-between items-center">
         <div class="card-pricing w-full lg:w-4/12 bg-white border dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-between">
